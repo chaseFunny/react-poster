@@ -1,55 +1,32 @@
-# react 海报组件示例代码
+# React Poster 模版
 
-一个兼容性良好的海报组件
+一个现代化的 React 开发模版，集成了最新的前端技术栈：
 
-## feature
+- ⚡️ [React 19](https://react.dev/) - 全新的 React 版本
+- 🎨 [Tailwind CSS 3](https://tailwindcss.com/) - 实用优先的 CSS 框架  
+- 🔧 [Biome](https://biomejs.dev/) - 快速的代码格式化和检查工具
+- 📦 [RSBuild](https://rsbuild.dev/) - 基于 Rust 的高性能构建工具
+- 🎯 [shadcn/ui](https://ui.shadcn.com/) - 可定制的组件库
 
-- 展示
-  - pc web 网页端
-  - h5 端 
-    - ios
-    - android
-- 下载
+## 特性
 
-## 海报包含
+- ⚡️ 快速的开发和构建速度
+- 🎨 完整的 TypeScript 支持
+- 🔥 热更新开发体验
+- ~~📦 基于文件的路由系统~~
+- ~~🎯 内置组件库和工具函数~~
+- 💪 严格的代码规范和格式化
 
-- 文字 、自定义字体文字
-- 图片
-- 二维码
-
-## 实现
-
-使用 html2canvas + dom-to-image 组合来实现一个兼容性良好的海报展示下载功能组件
-
-## 技术栈
-
-- Rspack
-- React 19
-- tailwind css
-- html2canvas
-- dom-to-image
-- shadui/cn
-
-
-## 引入 tailwindcss 
+## 快速开始
 
 ```bash
-pnpm add -D tailwindcss postcss autoprefixer
-pnpm dlx tailwindcss init -p
-```
+# 克隆项目
+git clone git@github.com:axin-s-Template/react19-light-starter.git
+# 安装依赖
+pnpm install
 
-然后去 App.css 添加
+# 启动开发服务器
+pnpm dev
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-然后去 tailwind.config.js 添加 `content: [ "./src/**/*.{ts,tsx,js,jsx}"],` 。
-
-
-## 引入 shadui/cn
-
-```bash
-pnpm dlx shadcn@latest init
-```
+## 许可证
+MIT
