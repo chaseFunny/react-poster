@@ -49,6 +49,14 @@
 	}
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: 'JingNanBoBoHei';
+  font-style: normal;
+  src: url('./assets/JingNanBoBoHei.woff2') format('woff2');
+}
+
+
 @layer base {
 	* {
 		@apply border-border;

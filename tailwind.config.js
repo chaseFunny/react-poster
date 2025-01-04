@@ -4,6 +4,9 @@ module.exports = {
    content: [ "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
+      aspectRatio: {
+        '1464/220': '1464 / 220',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -44,6 +47,10 @@ module.exports = {
         md: `calc(var(--radius) - 2px)`,
         sm: "calc(var(--radius) - 4px)",
       },
+    },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      JingNanBoBoHei: ["JingNanBoBoHei", "sans-serif"],
     },
   },
   plugins: [require("tailwindcss-animate")],
