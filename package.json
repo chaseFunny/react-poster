@@ -1,6 +1,6 @@
 {
   "name": "react-poster",
-  "description": "React 项目如何开发一个兼容性良好的 poster 组件",
+  "description": "React 19 + Tailwind 3 + Biome + RSBuild + shadui/cn 轻量启动模版",
   "private": true,
   "version": "1.0.0",
   "scripts": {
