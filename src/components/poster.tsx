@@ -9,13 +9,16 @@ export const Poster = () => {
   const {getCurrPosterImageUrl, imgUrl} = usePosterImage();
    useEffect(() => {
     // 页面渲染后，获取当前海报截图，解决移动端微信环境下载失效问题
-    if (isMobile) {
+     if (isMobile) {
+      console.log('近来 l');
+      
       getCurrPosterImageUrl();
     }
   }, []);
  
   return (
-    <div className='relative'> <div id='poster' className="w-[375px] bg-white rounded-lg shadow-lg border-gray-300 border-[1px] border-solid p-6 space-y-6">
+    <div className='relative'>
+      <div id='poster' className="w-[375px] bg-white rounded-lg shadow-lg border-gray-300 border-[1px] border-solid p-6 space-y-6">
       {/* 头部 */}
       <div className="flex items-center gap-3">
         <img 
@@ -65,8 +68,8 @@ export const Poster = () => {
           includeMargin={true}
         />
       </div>
-    </div>
-      { isMobile && <img src={imgUrl} className='absolute left-0 top-0 w-[375px] h-[442px] z-10' />}
+      </div>  
+      { isMobile && imgUrl && <img src={imgUrl} className='absolute left-0 top-0 w-[375px] h-[442px] z-10' />}
     </div>
    
   );

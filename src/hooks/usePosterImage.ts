@@ -40,9 +40,10 @@ export default function usePosterImage() {
       } else {
         // 使用html2canvas生成图像
         const html2canvas: any = await import('html2canvas');
-        html2canvas(element, { useCORS: true, allowTaint: true, scale: 2 }).then((canvas: any) => {
+        html2canvas.default(element, { useCORS: true, allowTaint: true, scale: 2 }).then((canvas: any) => {
           // 将canvas转换为DataURL
           const dataURL = canvas.toDataURL('image/png');
+          console.log(dataURL, 'dataURL');
 
           setImgUrl(dataURL)
         });
